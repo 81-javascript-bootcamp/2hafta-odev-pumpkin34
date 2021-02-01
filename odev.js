@@ -23,7 +23,7 @@ myCarDetails();
 
 name string olmali
 name bos olmamali
-bosluk icerebilir, ancak bosluk haridcindeki isimler en az 2 karakterden olusmali.
+bosluk //icerebilir//, ancak bosluk haridcindeki isimler en az 2 karakterden olusmali.
 
 **/
 
