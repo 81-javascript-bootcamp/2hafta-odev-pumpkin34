@@ -8,8 +8,8 @@ var car = {
     registrationNumber: "GA12345",
     brand: "Toyota",
 
-    displayDetails: function(){
-        console.log(this.registrationNumber + " " + this.brand);
+    displayDetails: () => {
+        console.log(car.registrationNumber + " " + car.brand);
     }
 }
 
@@ -26,11 +26,11 @@ name bos olmamali
 bosluk //icerebilir//, ancak bosluk haridcindeki isimler en az 2 karakterden olusmali.
 
 **/
-
+/*
 function isValidName(name) {
-  /// your code here
+  your code here
 }
-
+*/
 
 
 /**
@@ -39,7 +39,7 @@ function isValidName(name) {
 3. summary fonkisyonunu ciktisi "Brave New World was written by Aldous Huxley. It is a dystopian novel written in 1932." olacak sekilde cagirin.
 
 **/
-
+/*
 const book = {
   title: 'Brave New World',
   author: 'Aldous Huxley',
@@ -51,6 +51,6 @@ function summary(genre, year) {
   )
 }
 
-
+*/
 
 
