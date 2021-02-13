@@ -1,29 +1,29 @@
 /** 
 
 1. mycarDetails fonksiyonunu "GA12345 Toyota" ciktisini verecek sekilde duzenleyin.
-
+*/ 
 var car = { 
     registrationNumber: "GA12345",
     brand: "Toyota",
 
-    displayDetails: () => {
-        console.log(car.registrationNumber + " " + car.brand);
+     displayDetails: function(){
+        console.log(this.registrationNumber + " " + this.brand);
     }
 }
 
-var myCarDetails =  car.displayDetails;
+var myCarDetails =  car.displayDetails.bind(car);
 myCarDetails();
 
 
-/** 
 
+/**
 2.name parametresi alan bir isValidName fonksiyonu yazin. Fonksiyon asagidaki kosullarin hepsi saglaniyorsa true, saglanmiyorsa false donmelidir:
 
 name string olmali
 name bos olmamali
 bosluk //icerebilir//, ancak bosluk haridcindeki isimler en az 2 karakterden olusmali.
 
-**/ 
+
 
 function isValidName(name) {
   return typeof name == 'string' && name !== "" && name.trim().length > 1 
@@ -37,6 +37,7 @@ console.log(isValidName("") === false);
 console.log(isValidName("  \t\n") === false);
 console.log(isValidName("X") === false);
 
+*/
 /**
 
 
